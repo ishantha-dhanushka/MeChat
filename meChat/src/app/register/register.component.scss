@@ -1,0 +1,21 @@
+@import './../../styles/variables';
+
+
+.register-left{
+    background-color: $primary;
+}
+
+.register-right{
+    padding: 70px;
+}
+
+.logo-name{
+    color: white;
+    text-align: center;
+    font-size: 70px;
+    padding-top: 50%;
+}
+
+.register-form{
+    margin-top: 100px;
+}

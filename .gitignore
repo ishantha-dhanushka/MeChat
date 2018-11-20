@@ -1,0 +1,13 @@
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# compiled output
+/MeChat_API/.vs
+/MeChat_API/MeChat/bin
+/MeChat_API/MeChat/obj
+/MeChat_API/MeChatDTO/bin
+/MeChat_API/MeChatDTO/obj
+/MeChat_API/MeChatHub/bin
+/MeChat_API/MeChatHub/obj
+/MeChat_API/MeChatRepository/bin
+/MeChat_API/MeChatRepository/obj
+

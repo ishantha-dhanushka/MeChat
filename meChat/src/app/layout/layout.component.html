@@ -1,0 +1,27 @@
+<div class="row">
+  <div class="col-md-12 pl-0 pr-0">
+    <nav class="navbar navbar-expand-lg navbar-light me-chat-header">
+      <div class="container">            
+        <ul class="nav navbar-nav">    
+          <li><a routerLink="/home" class="navbar-brand text-white"><span class="fa fa-comment-o"></span> MeChat</a></li>          
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          
+          <li>
+            <div class="inset">
+              <img src="https://sunlimetech.com/portfolio/boot4menu/assets/imgs/team/img_02.png">
+            </div>
+          </li>
+          <li class="p-2">
+            <a class="text-white btn">{{loggedUser.name}}</a>
+          </li>
+          <li class="p-2">
+            <a class="text-white btn" (click)="logout()">LOGOUT</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</div>
+
+<router-outlet></router-outlet>

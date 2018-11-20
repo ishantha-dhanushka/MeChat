@@ -1,0 +1,30 @@
+<section class="pb-5">
+    
+    <div class="subheader-panel pt-3 pb-3">
+      <h3 class="section-title text-muted">FIND FRIENDS</h3>
+    </div>
+    
+    <div class="row">
+      <!-- <div class="col-md-12">
+          <p class="text-muted text-center">There are no friends</p>
+      </div> -->
+      
+      <!-- Find Friends -->
+      <div class="col-xs-2 col-sm-4 col-md-2 mt-2" *ngFor="let member of friendsService.notFriends">
+        <div class="image-flip">
+          <div class="mainflip">
+            <div class="frontside">
+              <div class="card">
+                <div class="card-body text-center">
+                  <p><img class=" img-fluid" src="https://sunlimetech.com/portfolio/boot4menu/assets/imgs/team/img_02.png" alt="card image"></p>
+                  <h6 class="card-title text-muted text-ellipsis">{{member.name}}</h6>
+                  <button (click)="makeFriend(member.id)" [disabled]="memberCreating" class="btn btn-default btn-sm btn-block"><i class="fa fa-plus"></i> CONNECT</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+</section>

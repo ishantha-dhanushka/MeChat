@@ -1,0 +1,21 @@
+@import './../../styles/variables';
+
+
+.login-left{
+    background-color: $primary;
+}
+
+.login-right{
+    padding: 70px;
+}
+
+.logo-name{
+    color: white;
+    text-align: center;
+    font-size: 70px;
+    padding-top: 50%;
+}
+
+.login-form{
+    margin-top: 200px;
+}

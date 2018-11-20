@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2050
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MeChat", "MeChat\MeChat.csproj", "{0DBAFBD5-32EE-4836-8941-FC947333FE22}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MeChatDTO", "MeChatDTO\MeChatDTO.csproj", "{384A873E-C968-4AE9-9D2A-C1C5CD2E93EF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MeChatRepository", "MeChatRepository\MeChatRepository.csproj", "{801028AE-2E68-46FF-A376-DAEE7121FBDE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MeChatHub", "MeChatHub\MeChatHub.csproj", "{3FA35435-B400-49E0-B1E0-F3FFD8946F10}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0DBAFBD5-32EE-4836-8941-FC947333FE22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DBAFBD5-32EE-4836-8941-FC947333FE22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DBAFBD5-32EE-4836-8941-FC947333FE22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DBAFBD5-32EE-4836-8941-FC947333FE22}.Release|Any CPU.Build.0 = Release|Any CPU
+		{384A873E-C968-4AE9-9D2A-C1C5CD2E93EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{384A873E-C968-4AE9-9D2A-C1C5CD2E93EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{384A873E-C968-4AE9-9D2A-C1C5CD2E93EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{384A873E-C968-4AE9-9D2A-C1C5CD2E93EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{801028AE-2E68-46FF-A376-DAEE7121FBDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{801028AE-2E68-46FF-A376-DAEE7121FBDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{801028AE-2E68-46FF-A376-DAEE7121FBDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{801028AE-2E68-46FF-A376-DAEE7121FBDE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3FA35435-B400-49E0-B1E0-F3FFD8946F10}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FA35435-B400-49E0-B1E0-F3FFD8946F10}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FA35435-B400-49E0-B1E0-F3FFD8946F10}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3FA35435-B400-49E0-B1E0-F3FFD8946F10}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {606200AB-963E-4A8D-8167-A24C54346EB3}
+	EndGlobalSection
+EndGlobal

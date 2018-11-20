@@ -1,0 +1,71 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/scss/bootstrap';
+@import '~bootstrap/scss/bootstrap-grid';
+$fa-font-path: "../node_modules/font-awesome/fonts";
+@import "../node_modules/font-awesome/scss/font-awesome.scss";
+@import './styles/variables';
+
+
+html::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+
+
+a {
+    color: $primary;
+    text-decoration: none;
+}
+
+a:hover{
+    color: $primary;
+}
+a.btn:hover{
+    background-color: #6bab22;
+    color: white;
+}
+
+.text-ellipsis {
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {   
+    border-color: rgba(124, 198,39, 0.8);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(124, 198,39, 0.6);
+    outline: 0 none;
+}
+
+.me-chat-button{
+    color: #fff;
+    background-color: $primary;
+    border-color: $primary;
+}
+
+.error-msg{
+    color: red;
+}
+
+.full-height{
+    height: calc(100vh);
+}
+
+.app-alerts .app-alert.success{
+    background-color: $primary !important;
+}

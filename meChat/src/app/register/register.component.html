@@ -1,0 +1,57 @@
+<div class="row">
+  <div class="col-md-6 full-height register-left">
+    
+    <p class="text-center text-white logo-name"><span class="fa fa-comment-o"></span> MeChat</p>
+  </div>
+  <div class="col-md-6 full-height register-right">
+    <form name="form" [formGroup]="registerFormGroup" (submit)="register()" class="register-form">
+      
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" class="form-control" name="name" formControlName="name" />
+        <div *ngIf="registerFormGroup.controls['name'].errors && !registerFormGroup.controls['name'].pristine" class="error-msg">
+          <div [hidden]="!registerFormGroup.controls['name'].errors.required">Name is required.</div>
+        </div>
+      </div>
+      
+      <div class="form-group">
+        <label for="username">Username</label>
+        <input type="text" class="form-control" name="username" formControlName="username" />
+        <div *ngIf="registerFormGroup.controls['username'].errors && !registerFormGroup.controls['username'].pristine" class="error-msg">
+          <div [hidden]="!registerFormGroup.controls['username'].errors.required">Username is required.</div>
+        </div>
+      </div>
+      
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" class="form-control" name="password" formControlName="password" required />
+        <div *ngIf="registerFormGroup.controls['password'].errors && !registerFormGroup.controls['password'].pristine" class="error-msg">
+          <div [hidden]="!registerFormGroup.controls['password'].errors.required">Password is required.</div>
+          <div [hidden]="!registerFormGroup.controls['password'].errors.minlength">Must be at least 8 characters.</div>
+          <div [hidden]="!registerFormGroup.controls['password'].errors.hasNumber">Must contain at least 1 number.</div>
+          <div [hidden]="!registerFormGroup.controls['password'].errors.hasCapitalCase">Must contain at least 1 in Capital Case.</div>
+          <div [hidden]="!registerFormGroup.controls['password'].errors.hasSmallCase">Must contain at least 1 Letter in Small Case.</div>
+          <div [hidden]="!registerFormGroup.controls['password'].errors.hasSpecialCharacters">Must contain at least 1 Special Character.</div>
+        </div>
+      </div>
+      
+      <div class="form-group">
+        <label for="conf_password">Confirm Password</label>
+        <input type="password" class="form-control" name="conf_password" formControlName="conf_password" required />
+        <div *ngIf="registerFormGroup.controls['conf_password'].errors && !registerFormGroup.controls['conf_password'].pristine" class="error-msg">
+          <div [hidden]="!registerFormGroup.controls['conf_password'].errors.required">Confirm password is required.</div>
+          <div [hidden]="!registerFormGroup.controls['conf_password'].errors.NoPassswordMatch">Confirm password is not matched with password.</div>
+        </div>
+      </div>
+      
+      <div class="form-group">
+        <button type="submit" [disabled]="!registerFormGroup.valid" class="btn btn-block btn-lg me-chat-button mt-5">Register</button>
+      </div>
+    </form>
+    
+    <p>
+      Already a member? <a routerLink="/login">Login</a>
+    </p>
+    
+  </div>
+</div>

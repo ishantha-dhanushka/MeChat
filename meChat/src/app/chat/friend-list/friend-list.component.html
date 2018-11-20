@@ -1,0 +1,18 @@
+<nav class="navbar navbar-fixed-left navbar-inverse p-0">
+  <ul class="nav">
+    <li *ngFor="let friend of friendsService.allFriends" [class]="friend.chatId == CHAT_ID ? 'p-2 pl-4 friend-item active' : 'p-2 pl-4 friend-item'">
+      <a routerLink="/chat/{{friend.chatId}}">
+        <div class="row">
+          <div class="col-md-3 pl-2">
+            <img class="img-fluid" src="https://sunlimetech.com/portfolio/boot4menu/assets/imgs/team/img_02.png" alt="card image">
+          </div>
+          <div class="col-md-9">
+            <p class="p-0 mb-0">{{friend.name}}</p>
+            <small *ngIf="online_friends.indexOf(friend.chatId) != -1"><span class="fa fa-circle"></span> online</small>
+            <small *ngIf="online_friends.indexOf(friend.chatId) == -1" class=" text-muted"><span class="fa fa-circle"></span> offline</small>
+          </div>
+        </div>
+      </a>
+    </li>
+  </ul>
+</nav>

@@ -1,0 +1,36 @@
+<!-- Chat Message Body -->
+<div class="full-height chat-message-area">
+  
+  <div class="p-2" *ngIf="hubService.hubStatus == HubStatus.DISCONNECTED">
+    <div class="alert alert-danger">
+      Connection Lost! Retrying...
+    </div>
+  </div>
+  
+  
+    <div class="mesgs" #scrollMe>
+      <div class="msg_history" *ngIf="!loadingPreviousMessages">
+        <chat-text *ngFor="let message of messages" [MESSAGE]="message"></chat-text>
+        <div class="text-center text-success p-5" *ngIf="messages.length == 0">
+          <span class="fa fa-comment-o"></span> No Messages!
+        </div>
+      </div>
+      
+      <div class="text-center msg_history text-success p-5" *ngIf="loadingPreviousMessages">
+        <span class="fa fa fa-circle-o-notch  fa-spin "></span>     Loading Messages...
+      </div>
+    </div>
+</div>
+
+<!-- Chat INput Area -->
+<div class="p-2">
+  
+  <div class="type_msg">
+    <div class="input_msg_write">
+      <form [formGroup]="messageForm" (submit)="sendMessage()">
+        <input type="text" class="write_msg" placeholder="Type a message"  formControlName="messageText"/>
+        <button type="submit" [disabled]="!messageForm.valid" class="msg_send_btn"><i class="fa fa-paper-plane-o" aria-hidden="true"></i></button>
+      </form>
+    </div>
+  </div>
+</div>

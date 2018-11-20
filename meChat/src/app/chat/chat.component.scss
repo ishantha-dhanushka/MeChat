@@ -1,0 +1,18 @@
+body{
+    overflow: hidden !important;
+}
+
+// ::-webkit-scrollbar {
+//     width: 0px;  /* remove scrollbar space */
+//     background: transparent;  /* optional: just make scrollbar invisible */
+// }
+
+.left-menu{
+    background-color: #7cc62714;
+    overflow: auto;
+    overflow-x: hidden
+}
+
+.full-height{
+    height: calc(100vh - 50px);
+}
