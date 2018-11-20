@@ -7,6 +7,6 @@ Run MeChat.sln to start the MeChat API.
 
 ### Angular 6 Application
 Frontend application contains in '**meChat**' folder.
-run '* *npm install* *' to install dependancies.
-After installing dependancies run command '* *ng serve -o* *', It will open a browser with the application.
+run '*npm install*' to install dependancies.
+After installing dependancies run command '*ng serve -o*', It will open a browser with the application.
 You can register with a new accouunt to login to the app.
